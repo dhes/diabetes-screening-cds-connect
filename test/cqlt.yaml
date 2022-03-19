@@ -1,6 +1,6 @@
 ---
 library:
-  name: USPSTF_Diabetes_Screening_FHIRv401
+  name: USPSTF_Screening_for_Abnormal_Blood_Glucose_and_Type2_Diabetes_FHIRv401
   paths: ../cql
 hook:
   id: diabetes-screening
