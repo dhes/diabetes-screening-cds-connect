@@ -1,0 +1,25 @@
+name: excluded_pregnancy_hispanicOrLatino_patient41to70_1
+data:
+  - resourceType: Patient
+    name: Jane Smith
+    gender: female
+    birthDate: 1970-02-16T00:00:00.000Z
+    extension:
+      - url: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity'
+        extension:
+          - url: ombCategory
+            valueCoding: 'urn:oid:2.16.840.1.113883.6.238#2135-2 Hispanic or Latino'
+  - resourceType: Observation
+    code: 'LOINC#39156-5 Body mass index (BMI) [Ratio]'
+    valueQuantity: 25 kg/m2
+    issued: 2019-04-05T00:00:00.000Z
+  - resourceType: Condition
+    code: 'SNOMEDCT#11687002 Gestational diabetes mellitus (disorder)'
+    onsetDateTime: 2018-04-05T00:00:00.000Z
+    abatementDateTime: 2018-06-05T00:00:00.000Z
+  - resourceType: Condition
+    code: 'SNOMED#77386006 Pregnant (finding)'
+    onsetDateTime: 2019-04-05T00:00:00.000Z
+results:
+  Notification: null
+  Recommendation: null
