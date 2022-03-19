@@ -5,8 +5,8 @@ function expectOK(testCase) {
 function expectCards(testCase) {
   if (testCase.expected != null) {
     return (
-      testCase.expected.YesRecommendation != null ||
-      testCase.expected.NeedMoreInformation != null
+      testCase.expected.Notification != null ||
+      testCase.expected.Recommendation != null
     );
   }
 }
@@ -14,12 +14,12 @@ function expectCards(testCase) {
 function expectCardsContent(testCase) {
   if (expectCards(testCase)) {
     const cardArray = [];
-    if (testCase.expected.YesRecommendation != null) {
+    if (testCase.expected.Recommendation != null) {
       cardArray.push({
         uuid: 4,
         summary: "Statin Use for the Primary Prevention of CVD",
         indicator: "info",
-        detail: testCase.expected.YesRecommendation + testCase.expected.ExclusionCriteria,
+        detail: testCase.expected.Recommendation,
         source: {
           label:
             "CDS Connect: Statin Use for the Primary Prevention of CVD in Adults",
@@ -41,7 +41,7 @@ function expectCardsContent(testCase) {
       cardArray.push({
         summary: "More information needed to complete Statin Use assessment",
         indicator: "warning",
-        detail: testCase.expected.NeedMoreInformation,
+        detail: testCase.expected.Notification,
         source: {
           label:
             "CDS Connect: Statin Use for the Primary Prevention of CVD in Adults",
