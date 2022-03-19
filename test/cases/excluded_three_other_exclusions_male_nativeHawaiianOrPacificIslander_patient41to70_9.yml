@@ -1,0 +1,37 @@
+name: >-
+  excluded_three_other_exclusions_male_nativeHawaiianOrPacificIslander_patient41to70_9
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1970-02-16T00:00:00.000Z
+    extension:
+      - url: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'
+        extension:
+          - url: ombCategory
+            valueCoding: >-
+              urn:oid:2.16.840.1.113883.6.238#2076-8 Native Hawaiian or Other
+              Pacific Islander
+  - resourceType: Observation
+    code: 'LOINC#39156-5 Body mass index (BMI) [Ratio]'
+    valueQuantity: 25 kg/m2
+    issued: 2019-04-05T00:00:00.000Z
+  - resourceType: Condition
+    code: 'ICD10CM#E28.2 Polycystic ovarian syndrome'
+    onsetDateTime: 2018-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: 'LOINC#4548-4 Hemoglobin A1c/Hemoglobin.total in Blood'
+    valueQuantity: 4.5 %
+    issued: 2018-04-05T00:00:00.000Z
+  - resourceType: Observation
+    code: >-
+      LOINC#1501-6 Glucose [Mass/volume] in Serum or Plasma --1 hour post 100 g
+      glucose PO
+    valueQuantity: 110 mg/dL
+    issued: 2018-04-05T00:00:00.000Z
+  - resourceType: Condition
+    code: 'SNOMEDCT#9414007 Impaired glucose tolerance (disorder)'
+    onsetDateTime: 2019-04-05T00:00:00.000Z
+results:
+  Notification: null
+  Recommendation: null

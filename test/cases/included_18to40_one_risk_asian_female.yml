@@ -1,0 +1,54 @@
+name: included_18to40_one_risk_asian_female
+data:
+  - resourceType: Patient
+    name: Jane Smith
+    gender: female
+    birthDate: 1990-02-16T00:00:00.000Z
+    extension:
+      - url: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'
+        extension:
+          - url: ombCategory
+            valueCoding: 'urn:oid:2.16.840.1.113883.6.238#2028-9 Asian'
+  - resourceType: Observation
+    code: 'LOINC#39156-5 Body mass index (BMI) [Ratio]'
+    valueQuantity: 25 kg/m2
+    issued: 2019-04-05T00:00:00.000Z
+results:
+  Notification: >-
+    You may be at risk for (in other words, more likely to get) high blood sugar
+    and type 2 diabetes based on risk factors you may have. High blood sugar and
+    diabetes can lead to heart disease and stroke.
+
+
+    Many factors increase a person’s risk for high blood sugar including: being
+    45 years or older; being overweight; having a parent, brother or sister with
+    diabetes; or if you are a woman with a history of  diabetes while pregnant
+    (gestational diabetes) or polycystic ovarian syndrome (a condition where the
+    ovaries produce higher-than-normal amounts of certain hormones). If you are
+    African-American, Hispanic, Alaskan Native, American Indian, Asian American,
+    or Native Hawaiian/Pacific Islander you may also be more likely to have high
+    blood sugar.
+  Recommendation: >-
+    Experts (i.e., [The U.S. Preventive Services Task
+    Force](https://www.uspreventiveservicestaskforce.org/Page/Name/about-the-uspstf))
+    recommend blood tests to measure blood sugar levels if you are at increased
+    risk. If the tests show you have high blood sugar, there are steps you can
+    take to help lower your blood sugar and prevent diabetes.
+
+
+    Contact your doctor to schedule an appointment and ask about being tested
+    for high blood sugar and diabetes.
+
+
+    Here are some links to resources you may want to review:
+
+
+    * [Prediabetes: Your chance to prevent Type 2
+    diabetes](https://www.cdc.gov/diabetes/basics/prediabetes.html)
+
+    * [Take steps to prevent type 2
+    diabetes](https://healthfinder.gov/HealthTopics/Category/health-conditions-and-diseases/diabetes/take-steps-to-prevent-type-2-diabetes)
+
+    * [The U.S. Preventive Services Task Force Recommendation on “Abnormal Blood
+    Glucose and Type 2 Diabetes Mellitus:
+    Screening”](https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/screening-for-abnormal-blood-glucose-and-type-2-diabetes?ds=1&s=glucose)

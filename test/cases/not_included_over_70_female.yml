@@ -1,0 +1,9 @@
+name: not_included_over_70_female
+data:
+  - resourceType: Patient
+    name: Jane Smith
+    gender: female
+    birthDate: 1910-02-16T00:00:00.000Z
+results:
+  Notification: null
+  Recommendation: null

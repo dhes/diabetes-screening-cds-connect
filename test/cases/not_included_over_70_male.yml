@@ -1,0 +1,9 @@
+name: not_included_over_70_male
+data:
+  - resourceType: Patient
+    name: Joe Smith
+    gender: male
+    birthDate: 1910-02-16T00:00:00.000Z
+results:
+  Notification: null
+  Recommendation: null

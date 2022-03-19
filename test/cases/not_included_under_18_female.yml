@@ -1,0 +1,9 @@
+name: not_included_under_18_female
+data:
+  - resourceType: Patient
+    name: Jane Smith
+    gender: female
+    birthDate: 2010-02-16T00:00:00.000Z
+results:
+  Notification: null
+  Recommendation: null

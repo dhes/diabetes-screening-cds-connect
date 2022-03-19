@@ -1,0 +1,24 @@
+name: not_included_18to40_half_brother_history_of_diabetes_white_female
+data:
+  - resourceType: Patient
+    name: Jane Smith
+    gender: female
+    birthDate: 1990-02-16T00:00:00.000Z
+    extension:
+      - url: 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'
+        extension:
+          - url: ombCategory
+            valueCoding: 'urn:oid:2.16.840.1.113883.6.238#2106-3 White'
+  - resourceType: Observation
+    code: 'LOINC#39156-5 Body mass index (BMI) [Ratio]'
+    valueQuantity: 25 kg/m2
+    issued: 2019-04-05T00:00:00.000Z
+  - resourceType: FamilyMemberHistory
+    relationship: 'V3-ROLE-CODE#HBRO half brother'
+    status: completed
+    date: 2018-04-05T00:00:00.000Z
+    condition:
+      code: 'ICD10CM#E10.36 Type 1 diabetes mellitus with diabetic cataract'
+results:
+  Notification: null
+  Recommendation: null
